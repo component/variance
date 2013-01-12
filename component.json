@@ -1,0 +1,16 @@
+{
+  "name": "variance",
+  "repo": "component/variance",
+  "description": "Array variance utility",
+  "version": "1.0.0",
+  "keywords": ["array", "variance", "utility", "stats", "statistics"],
+  "dependencies": {
+    "component/to-function": "*",
+    "component/mean": "*"
+  },
+  "development": {},
+  "scripts": [
+    "index.js"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "variance-component",
+  "version": "1.0.0",
+  "dependencies": {
+    "to-function": "*",
+    "mean-component": "*"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  },
+  "component": {
+    "scripts": {
+      "variance": "index.js"
+    }
+  }
+}
