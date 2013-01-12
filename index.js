@@ -21,8 +21,15 @@ module.exports = function(arr, fn){
   var m = mean(arr);
   var d = [];
 
-  for (var i = 0; i < arr.length; i++) {
-    d.push(Math.pow(arr[i] - m, 2));
+  if (fn) {
+    fn = toFunction(fn);
+    for (var i = 0; i < arr.length; i++) {
+      d.push(Math.pow(fn(arr[i], i) - m, 2));
+    }
+  } else {
+    for (var i = 0; i < arr.length; i++) {
+      d.push(Math.pow(arr[i] - m, 2));
+    }
   }
 
   return mean(d);
