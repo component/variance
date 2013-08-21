@@ -13,5 +13,9 @@
     "scripts": {
       "variance": "index.js"
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/component/variance.git"
   }
 }
