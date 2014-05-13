@@ -18,7 +18,7 @@ var toFunction = require('to-function')
 module.exports = function(arr, fn){
   if (0 == arr.length) return null;
 
-  var m = mean(arr);
+  var m = mean(arr, fn);
   var d = [];
 
   if (fn) {
